@@ -11,5 +11,6 @@ server.listen(port, () => {
     console.log(`Servidor ejecutándose en http://localhost:${port}`);
 });
 
-if (port == 3000)
+if (port === 3000) {
     console.log('Puerto correcto');
+}
