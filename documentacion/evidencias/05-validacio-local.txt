@@ -1,0 +1,19 @@
+$ /private/tmp/jest-validation/node_modules/.bin/eslint server.js sum.js sum.test.js
+
+Exit code: 0
+
+$ git diff --check
+
+Exit code: 0
+
+$ git check-ignore node_modules .DS_Store
+node_modules
+.DS_Store
+
+Exit code: 0
+
+$ shasum -a 256 sum.js sum.test.js
+8420e1fbb57ef0cd99065a1fc75c3c769a6364f8cdc16b06ade348160a36e43b  sum.js
+643fc392cd66036ebc425e215838c69cb4e55cf6ea3ee5533feb8a8245fac9c9  sum.test.js
+
+Exit code: 0

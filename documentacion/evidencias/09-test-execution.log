@@ -1,0 +1,182 @@
+test-execution	Set up job	﻿2026-11-01T15:16:53.7245253Z Current runner version: '2.338.2'
+test-execution	Set up job	2026-11-01T15:16:53.7271630Z ##[group]Runner Image Provisioner
+test-execution	Set up job	2026-11-01T15:16:53.7272507Z Hosted Compute Agent
+test-execution	Set up job	2026-11-01T15:16:53.7273314Z Version: 20261021.618
+test-execution	Set up job	2026-11-01T15:16:53.7273956Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+test-execution	Set up job	2026-11-01T15:16:53.7274652Z Build Date: 2026-10-21T00:45:21Z
+test-execution	Set up job	2026-11-01T15:16:53.7275323Z Worker ID: {820adff0-fad3-4130-89b7-f0ce879ee2c0}
+test-execution	Set up job	2026-11-01T15:16:53.7275970Z Region: westus3
+test-execution	Set up job	2026-11-01T15:16:53.7276467Z Cloud: Azure
+test-execution	Set up job	2026-11-01T15:16:53.7276982Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7278403Z ##[group]Operating System
+test-execution	Set up job	2026-11-01T15:16:53.7278993Z Ubuntu
+test-execution	Set up job	2026-11-01T15:16:53.7279528Z 24.04.5
+test-execution	Set up job	2026-11-01T15:16:53.7280034Z LTS
+test-execution	Set up job	2026-11-01T15:16:53.7280522Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7281020Z ##[group]Runner Image
+test-execution	Set up job	2026-11-01T15:16:53.7281567Z Image: ubuntu-24.04
+test-execution	Set up job	2026-11-01T15:16:53.7282119Z Version: 20261025.353.1
+test-execution	Set up job	2026-11-01T15:16:53.7283263Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+test-execution	Set up job	2026-11-01T15:16:53.7284876Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+test-execution	Set up job	2026-11-01T15:16:53.7285762Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7286904Z ##[group]GITHUB_TOKEN Permissions
+test-execution	Set up job	2026-11-01T15:16:53.7288918Z Contents: read
+test-execution	Set up job	2026-11-01T15:16:53.7289547Z Metadata: read
+test-execution	Set up job	2026-11-01T15:16:53.7290162Z Packages: read
+test-execution	Set up job	2026-11-01T15:16:53.7290667Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7293005Z Secret source: Actions
+test-execution	Set up job	2026-11-01T15:16:53.7294384Z Cache mode: write
+test-execution	Set up job	2026-11-01T15:16:53.7295132Z Prepare workflow directory
+test-execution	Set up job	2026-11-01T15:16:53.7689512Z Prepare all required actions
+test-execution	Set up job	2026-11-01T15:16:53.7741549Z Getting action download info
+test-execution	Set up job	2026-11-01T15:16:54.0664727Z Download action repository 'actions/checkout@v2' (SHA:0717577d45739eb3c851188b29f50ed6c0b2194e)
+test-execution	Set up job	2026-11-01T15:16:54.7362272Z Complete job name: test-execution
+test-execution	Checkout code	﻿2026-11-01T15:16:54.8140613Z ##[group]Run actions/checkout@v2
+test-execution	Checkout code	2026-11-01T15:16:54.8141596Z with:
+test-execution	Checkout code	2026-11-01T15:16:54.8142626Z   repository: LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:54.8147009Z   token: ***
+test-execution	Checkout code	2026-11-01T15:16:54.8147514Z   ssh-strict: true
+test-execution	Checkout code	2026-11-01T15:16:54.8148020Z   persist-credentials: true
+test-execution	Checkout code	2026-11-01T15:16:54.8148549Z   clean: true
+test-execution	Checkout code	2026-11-01T15:16:54.8149061Z   fetch-depth: 1
+test-execution	Checkout code	2026-11-01T15:16:54.8149533Z   lfs: false
+test-execution	Checkout code	2026-11-01T15:16:54.8149978Z   submodules: false
+test-execution	Checkout code	2026-11-01T15:16:54.8150535Z   set-safe-directory: true
+test-execution	Checkout code	2026-11-01T15:16:54.8151077Z   allow-unsafe-pr-checkout: false
+test-execution	Checkout code	2026-11-01T15:16:54.8152082Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.0778968Z (node:2133) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test-execution	Checkout code	2026-11-01T15:16:55.0781415Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test-execution	Checkout code	2026-11-01T15:16:55.0886972Z Syncing repository: LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.0889153Z ##[group]Getting Git version info
+test-execution	Checkout code	2026-11-01T15:16:55.0890372Z Working directory is '/home/runner/work/githubActions_examples/githubActions_examples'
+test-execution	Checkout code	2026-11-01T15:16:55.0891618Z [command]/usr/bin/git version
+test-execution	Checkout code	2026-11-01T15:16:55.0940141Z git version 2.56.0
+test-execution	Checkout code	2026-11-01T15:16:55.0960573Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.0974917Z Temporarily overriding HOME='/home/runner/work/_temp/cd1e7aeb-02a8-4191-bc66-0b2ed5b85f5c' before making global git config changes
+test-execution	Checkout code	2026-11-01T15:16:55.0977558Z Adding repository directory to the temporary git global config as a safe directory
+test-execution	Checkout code	2026-11-01T15:16:55.0980317Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/githubActions_examples/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.1027484Z Deleting the contents of '/home/runner/work/githubActions_examples/githubActions_examples'
+test-execution	Checkout code	2026-11-01T15:16:55.1031084Z ##[group]Initializing the repository
+test-execution	Checkout code	2026-11-01T15:16:55.1035925Z [command]/usr/bin/git init /home/runner/work/githubActions_examples/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.1132896Z hint: Using 'master' as the name for the initial branch. This default branch name
+test-execution	Checkout code	2026-11-01T15:16:55.1134373Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test-execution	Checkout code	2026-11-01T15:16:55.1135454Z hint: to use in all of your new repositories, which will suppress this warning,
+test-execution	Checkout code	2026-11-01T15:16:55.1136216Z hint: call:
+test-execution	Checkout code	2026-11-01T15:16:55.1136667Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1137313Z hint: 	git config --global init.defaultBranch <name>
+test-execution	Checkout code	2026-11-01T15:16:55.1137940Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1138741Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test-execution	Checkout code	2026-11-01T15:16:55.1139806Z hint: 'development'. The just-created branch can be renamed via this command:
+test-execution	Checkout code	2026-11-01T15:16:55.1140568Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1141086Z hint: 	git branch -m <name>
+test-execution	Checkout code	2026-11-01T15:16:55.1141601Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1142770Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test-execution	Checkout code	2026-11-01T15:16:55.1144933Z Initialized empty Git repository in /home/runner/work/githubActions_examples/githubActions_examples/.git/
+test-execution	Checkout code	2026-11-01T15:16:55.1151947Z [command]/usr/bin/git remote add origin https://github.com/LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.1194915Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.1199120Z ##[group]Disabling automatic garbage collection
+test-execution	Checkout code	2026-11-01T15:16:55.1199869Z [command]/usr/bin/git config --local gc.auto 0
+test-execution	Checkout code	2026-11-01T15:16:55.1225884Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.1227027Z ##[group]Setting up auth
+test-execution	Checkout code	2026-11-01T15:16:55.1231928Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-execution	Checkout code	2026-11-01T15:16:55.1265622Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-execution	Checkout code	2026-11-01T15:16:55.1574209Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test-execution	Checkout code	2026-11-01T15:16:55.1599274Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test-execution	Checkout code	2026-11-01T15:16:55.1780882Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test-execution	Checkout code	2026-11-01T15:16:55.1819945Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.1820910Z ##[group]Fetching the repository
+test-execution	Checkout code	2026-11-01T15:16:55.1830073Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +f38e05d6dd0a7514f2faba1a68fc026ef7ba149f:refs/remotes/origin/nodejs_jest_job
+test-execution	Checkout code	2026-11-01T15:16:55.5972885Z remote: Enumerating objects: 18, done.        
+test-execution	Checkout code	2026-11-01T15:16:55.5975072Z remote: Counting objects:   5% (1/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5976893Z remote: Counting objects:  11% (2/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5978575Z remote: Counting objects:  16% (3/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5980310Z remote: Counting objects:  22% (4/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5982045Z remote: Counting objects:  27% (5/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5983784Z remote: Counting objects:  33% (6/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5985238Z remote: Counting objects:  38% (7/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5986630Z remote: Counting objects:  44% (8/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5988023Z remote: Counting objects:  50% (9/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5989551Z remote: Counting objects:  55% (10/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5990558Z remote: Counting objects:  61% (11/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5991407Z remote: Counting objects:  66% (12/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5993537Z remote: Counting objects:  72% (13/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5995199Z remote: Counting objects:  77% (14/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5996284Z remote: Counting objects:  83% (15/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5997232Z remote: Counting objects:  88% (16/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5998230Z remote: Counting objects:  94% (17/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5999097Z remote: Counting objects: 100% (18/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.6000387Z remote: Counting objects: 100% (18/18), done.        
+test-execution	Checkout code	2026-11-01T15:16:55.6001629Z remote: Compressing objects:   9% (1/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6003263Z remote: Compressing objects:  18% (2/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6004828Z remote: Compressing objects:  27% (3/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6006197Z remote: Compressing objects:  36% (4/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6007480Z remote: Compressing objects:  45% (5/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6009008Z remote: Compressing objects:  54% (6/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6010422Z remote: Compressing objects:  63% (7/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6011869Z remote: Compressing objects:  72% (8/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6013702Z remote: Compressing objects:  81% (9/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6015016Z remote: Compressing objects:  90% (10/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6016264Z remote: Compressing objects: 100% (11/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6018101Z remote: Compressing objects: 100% (11/11), done.        
+test-execution	Checkout code	2026-11-01T15:16:55.6020542Z remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0 (from 0)        
+test-execution	Checkout code	2026-11-01T15:16:55.6155412Z From https://github.com/LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.6157562Z  * [new ref]         f38e05d6dd0a7514f2faba1a68fc026ef7ba149f -> origin/nodejs_jest_job
+test-execution	Checkout code	2026-11-01T15:16:55.6162315Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.6164154Z ##[group]Determining the checkout info
+test-execution	Checkout code	2026-11-01T15:16:55.6165516Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.6166944Z ##[group]Checking out the ref
+test-execution	Checkout code	2026-11-01T15:16:55.6170776Z [command]/usr/bin/git checkout --progress --force -B nodejs_jest_job refs/remotes/origin/nodejs_jest_job
+test-execution	Checkout code	2026-11-01T15:16:55.6236232Z Switched to a new branch 'nodejs_jest_job'
+test-execution	Checkout code	2026-11-01T15:16:55.6240059Z branch 'nodejs_jest_job' set up to track 'origin/nodejs_jest_job'.
+test-execution	Checkout code	2026-11-01T15:16:55.6249565Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.6284402Z [command]/usr/bin/git log -1 --format='%H'
+test-execution	Checkout code	2026-11-01T15:16:55.6307987Z 'f38e05d6dd0a7514f2faba1a68fc026ef7ba149f'
+test-execution	Run jest tests	﻿2026-11-01T15:16:55.6698158Z ##[group]Run npm install jest
+test-execution	Run jest tests	2026-11-01T15:16:55.6699561Z ^[[36;1mnpm install jest^[[0m
+test-execution	Run jest tests	2026-11-01T15:16:55.6700710Z ^[[36;1mnpm test^[[0m
+test-execution	Run jest tests	2026-11-01T15:16:55.6718305Z shell: /usr/bin/bash -e {0}
+test-execution	Run jest tests	2026-11-01T15:16:55.6719413Z ##[endgroup]
+test-execution	Run jest tests	2026-11-01T15:16:58.6058567Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+test-execution	Run jest tests	2026-11-01T15:17:00.2145241Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2146061Z added 278 packages, and audited 279 packages in 4s
+test-execution	Run jest tests	2026-11-01T15:17:00.2146667Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2146921Z 48 packages are looking for funding
+test-execution	Run jest tests	2026-11-01T15:17:00.2147459Z   run `npm fund` for details
+test-execution	Run jest tests	2026-11-01T15:17:00.2451434Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2456661Z 19 vulnerabilities (3 low, 16 moderate)
+test-execution	Run jest tests	2026-11-01T15:17:00.2457182Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2457453Z To address issues that do not require attention, run:
+test-execution	Run jest tests	2026-11-01T15:17:00.2458086Z   npm audit fix
+test-execution	Run jest tests	2026-11-01T15:17:00.2458352Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2458670Z To address all issues (including breaking changes), run:
+test-execution	Run jest tests	2026-11-01T15:17:00.2459317Z   npm audit fix --force
+test-execution	Run jest tests	2026-11-01T15:17:00.2459681Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2459937Z Run `npm audit` for details.
+test-execution	Run jest tests	2026-11-01T15:17:00.3768819Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.3769532Z > github-actions-examples@1.0.0 test
+test-execution	Run jest tests	2026-11-01T15:17:00.3770243Z > jest
+test-execution	Run jest tests	2026-11-01T15:17:00.3770495Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.9540788Z PASS ./sum.test.js
+test-execution	Run jest tests	2026-11-01T15:17:00.9546066Z   ✓ adds 1 + 2 to equal 3 (2 ms)
+test-execution	Run jest tests	2026-11-01T15:17:00.9546916Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.9569536Z Test Suites: 1 passed, 1 total
+test-execution	Run jest tests	2026-11-01T15:17:00.9570416Z Tests:       1 passed, 1 total
+test-execution	Run jest tests	2026-11-01T15:17:00.9571249Z Snapshots:   0 total
+test-execution	Run jest tests	2026-11-01T15:17:00.9571947Z Time:        0.323 s
+test-execution	Run jest tests	2026-11-01T15:17:00.9573421Z Ran all test suites.
+test-execution	Post Checkout code	﻿2026-11-01T15:17:01.0000804Z Post job cleanup.
+test-execution	Post Checkout code	2026-11-01T15:17:01.1112457Z (node:2289) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test-execution	Post Checkout code	2026-11-01T15:17:01.1114114Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test-execution	Post Checkout code	2026-11-01T15:17:01.1151815Z [command]/usr/bin/git version
+test-execution	Post Checkout code	2026-11-01T15:17:01.1193997Z git version 2.56.0
+test-execution	Post Checkout code	2026-11-01T15:17:01.1230449Z Temporarily overriding HOME='/home/runner/work/_temp/238cf043-7e18-4e04-a61d-8f3385b4b114' before making global git config changes
+test-execution	Post Checkout code	2026-11-01T15:17:01.1231992Z Adding repository directory to the temporary git global config as a safe directory
+test-execution	Post Checkout code	2026-11-01T15:17:01.1234617Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/githubActions_examples/githubActions_examples
+test-execution	Post Checkout code	2026-11-01T15:17:01.1278167Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-execution	Post Checkout code	2026-11-01T15:17:01.1313071Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-execution	Post Checkout code	2026-11-01T15:17:01.1536553Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test-execution	Post Checkout code	2026-11-01T15:17:01.1566917Z http.https://github.com/.extraheader
+test-execution	Post Checkout code	2026-11-01T15:17:01.1577152Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test-execution	Post Checkout code	2026-11-01T15:17:01.1615384Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test-execution	Complete job	﻿2026-11-01T15:17:01.2000777Z Cleaning up orphan processes
+test-execution	Complete job	2026-11-01T15:17:01.2399851Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

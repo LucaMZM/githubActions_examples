@@ -1,0 +1,19 @@
+$ git reflog -3 --date=iso
+f38e05d HEAD@{2026-11-01 16:14:53 +0100}: commit: feat: run original Jest test after lint on nodejs_jest_job
+3b72931 HEAD@{2026-11-01 16:02:50 +0100}: checkout: moving from nodejs_linter_job to nodejs_jest_job
+3b72931 HEAD@{2026-10-15 18:51:28 +0200}: commit: Fix JavaScript lint errors
+
+Exit code: 0
+
+$ git branch -vv
+  main              d2b5d41 [origin/main: behind 2] Initial commit
+* nodejs_jest_job   f38e05d [origin/nodejs_jest_job] feat: run original Jest test after lint on nodejs_jest_job
+  nodejs_linter_job 3b72931 [origin/nodejs_linter_job] Fix JavaScript lint errors
+
+Exit code: 0
+
+$ git remote -v
+origin	https://github.com/LucaMZM/githubActions_examples.git (fetch)
+origin	https://github.com/LucaMZM/githubActions_examples.git (push)
+
+Exit code: 0

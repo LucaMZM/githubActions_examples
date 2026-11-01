@@ -1,0 +1,22 @@
+LucaMZM
+Pràctica: GitHub Actions i proves automatitzades amb Jest
+
+Alumne: LucaMZM
+Repositori: https://github.com/LucaMZM/githubActions_examples
+Branca nodejs_jest_job: https://github.com/LucaMZM/githubActions_examples/tree/nodejs_jest_job
+Execució correcta documentada: https://github.com/LucaMZM/githubActions_examples/actions/runs/41320251093
+Documentació i índex de captures: https://github.com/LucaMZM/githubActions_examples/blob/nodejs_jest_job/documentacion/README.md
+Captures i logs autèntics: https://github.com/LucaMZM/githubActions_examples/tree/nodejs_jest_job/documentacion/evidencias
+Memòria PDF: https://github.com/LucaMZM/githubActions_examples/blob/nodejs_jest_job/Practica_Jest_GitHubActions_LucaMZM.pdf
+Execucions posteriors de publicació: https://github.com/LucaMZM/githubActions_examples/actions?query=branch%3Anodejs_jest_job
+
+Resum:
+S'han incorporat els fitxers originals sum.js i sum.test.js sense modificar-los.
+S'ha configurat Jest amb el script npm test i s'ha versionat package-lock.json.
+El workflow s'activa amb push sobre nodejs_jest_job, conserva el linter i
+executa test-execution després de linter-execution mitjançant needs.
+La prova original de sumar 1 i 2 ha passat: 1 test i 1 suite correctes.
+L'execució 41320251093 correspon al commit f38e05d i presenta els dos jobs
+amb resultat success. Les captures i els logs publicats permeten comprovar-ho.
+La memòria està redactada en valencià. Les captures dels logs mostren els
+fitxers reals oberts en navegador; el log complet de GitHub també s'adjunta.

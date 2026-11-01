@@ -1,0 +1,558 @@
+linter-execution	Set up job	﻿2026-11-01T15:15:09.3397046Z Current runner version: '2.338.2'
+linter-execution	Set up job	2026-11-01T15:15:09.3423541Z ##[group]Runner Image Provisioner
+linter-execution	Set up job	2026-11-01T15:15:09.3424566Z Hosted Compute Agent
+linter-execution	Set up job	2026-11-01T15:15:09.3425270Z Version: 20261021.618
+linter-execution	Set up job	2026-11-01T15:15:09.3425903Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+linter-execution	Set up job	2026-11-01T15:15:09.3426685Z Build Date: 2026-10-21T00:45:21Z
+linter-execution	Set up job	2026-11-01T15:15:09.3427666Z Worker ID: {ef1d6931-740f-4545-b304-c353c7080389}
+linter-execution	Set up job	2026-11-01T15:15:09.3428384Z Region: westus3
+linter-execution	Set up job	2026-11-01T15:15:09.3428998Z Cloud: Azure
+linter-execution	Set up job	2026-11-01T15:15:09.3429544Z ##[endgroup]
+linter-execution	Set up job	2026-11-01T15:15:09.3431292Z ##[group]Operating System
+linter-execution	Set up job	2026-11-01T15:15:09.3432092Z Ubuntu
+linter-execution	Set up job	2026-11-01T15:15:09.3432720Z 24.04.5
+linter-execution	Set up job	2026-11-01T15:15:09.3433297Z LTS
+linter-execution	Set up job	2026-11-01T15:15:09.3433825Z ##[endgroup]
+linter-execution	Set up job	2026-11-01T15:15:09.3434373Z ##[group]Runner Image
+linter-execution	Set up job	2026-11-01T15:15:09.3435079Z Image: ubuntu-24.04
+linter-execution	Set up job	2026-11-01T15:15:09.3435662Z Version: 20261025.353.1
+linter-execution	Set up job	2026-11-01T15:15:09.3436773Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+linter-execution	Set up job	2026-11-01T15:15:09.3438791Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+linter-execution	Set up job	2026-11-01T15:15:09.3439893Z ##[endgroup]
+linter-execution	Set up job	2026-11-01T15:15:09.3441079Z ##[group]GITHUB_TOKEN Permissions
+linter-execution	Set up job	2026-11-01T15:15:09.3443254Z Contents: read
+linter-execution	Set up job	2026-11-01T15:15:09.3444233Z Metadata: read
+linter-execution	Set up job	2026-11-01T15:15:09.3444951Z Packages: read
+linter-execution	Set up job	2026-11-01T15:15:09.3445512Z ##[endgroup]
+linter-execution	Set up job	2026-11-01T15:15:09.3448161Z Secret source: Actions
+linter-execution	Set up job	2026-11-01T15:15:09.3449163Z Cache mode: write
+linter-execution	Set up job	2026-11-01T15:15:09.3449927Z Prepare workflow directory
+linter-execution	Set up job	2026-11-01T15:15:09.3878591Z Prepare all required actions
+linter-execution	Set up job	2026-11-01T15:15:09.3926752Z Getting action download info
+linter-execution	Set up job	2026-11-01T15:15:09.6935383Z Download action repository 'actions/checkout@v2' (SHA:0717577d45739eb3c851188b29f50ed6c0b2194e)
+linter-execution	Set up job	2026-11-01T15:15:10.2872105Z Download action repository 'github/super-linter@v4' (SHA:985ef206aaca4d560cb9ee2af2b42ba44adc1d55)
+linter-execution	Set up job	2026-11-01T15:15:10.9451874Z Complete job name: linter-execution
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	﻿2026-11-01T15:15:11.0049568Z ##[group]Pull down action image 'ghcr.io/github/super-linter:v4.10.0'
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.0190875Z ##[command]/usr/bin/docker pull ghcr.io/github/super-linter:v4.10.0
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8684652Z v4.10.0: Pulling from github/super-linter
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8689255Z c158987b0551: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8690946Z b225ab37e4b4: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8692696Z c88c80b6e377: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8694064Z 2e7ecbda2d78: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8695019Z a094d268b2a2: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8695832Z 439105f3f292: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8696621Z 8230ea6b5617: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8697828Z f2565199863c: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8699089Z aebf6746c5b4: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8700125Z a09219d53d41: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8700990Z fced99825fe0: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8702050Z 090edde53d4c: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8702924Z 700edc275bc9: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8703683Z 276cbf39bb76: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8704348Z 81e952a70a02: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8704999Z d8204cadd360: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8705646Z 18f2e4b66b5a: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8706300Z 769fd4b7e223: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8706945Z 0334da32ef7a: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8708026Z 94d062269ddf: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8708882Z 10cab8f62f02: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8709543Z b2d8104c3fa2: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8710187Z 0e48af19f2f8: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8710819Z 5e32222e29a7: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8711468Z ce4d374719cb: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8712113Z ce2e2092ff93: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8712786Z f7a93ea6427c: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8713424Z e6e31c11a945: Pulling fs layer
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8714034Z 81e952a70a02: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8714585Z d8204cadd360: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8715483Z 18f2e4b66b5a: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8716034Z 769fd4b7e223: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8716636Z 0334da32ef7a: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8717425Z 94d062269ddf: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8718196Z 10cab8f62f02: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8718756Z b2d8104c3fa2: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8719297Z 0e48af19f2f8: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8719841Z 5e32222e29a7: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8720372Z ce4d374719cb: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8720911Z ce2e2092ff93: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8721461Z f7a93ea6427c: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8722024Z e6e31c11a945: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8722565Z aebf6746c5b4: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8723122Z a09219d53d41: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8723680Z fced99825fe0: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8724224Z 090edde53d4c: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8724775Z 700edc275bc9: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8725316Z 2e7ecbda2d78: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8725878Z 276cbf39bb76: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8726418Z a094d268b2a2: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8726969Z 8230ea6b5617: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8727886Z f2565199863c: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:11.8728449Z 439105f3f292: Waiting
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.1566187Z b225ab37e4b4: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.1569329Z b225ab37e4b4: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.2202346Z c158987b0551: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.3322266Z c158987b0551: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.3584828Z b225ab37e4b4: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.6305976Z 2e7ecbda2d78: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:12.6307944Z 2e7ecbda2d78: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.0194864Z 439105f3f292: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.0195833Z 439105f3f292: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.0604544Z c88c80b6e377: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.0606570Z c88c80b6e377: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.3595027Z f2565199863c: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.3596087Z f2565199863c: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.6534183Z aebf6746c5b4: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.6538374Z aebf6746c5b4: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.6543198Z 8230ea6b5617: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.6544073Z 8230ea6b5617: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.8679534Z c88c80b6e377: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:13.8954536Z 2e7ecbda2d78: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:14.8218529Z fced99825fe0: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:14.8219208Z fced99825fe0: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:15.2456597Z 090edde53d4c: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:15.2457662Z 090edde53d4c: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:15.6006779Z 700edc275bc9: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:15.6007648Z 700edc275bc9: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:15.8809882Z 276cbf39bb76: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:15.8811128Z 276cbf39bb76: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:17.8608121Z 81e952a70a02: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:17.8608743Z 81e952a70a02: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:18.6865389Z d8204cadd360: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:18.6868384Z d8204cadd360: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:19.4277562Z 18f2e4b66b5a: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:19.4278639Z 18f2e4b66b5a: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:24.0880629Z 769fd4b7e223: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:24.0881270Z 769fd4b7e223: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:24.3646103Z 0334da32ef7a: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:24.3647020Z 0334da32ef7a: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:24.6531557Z 94d062269ddf: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:24.6532179Z 94d062269ddf: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:26.2216632Z 10cab8f62f02: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:26.2217406Z 10cab8f62f02: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:26.5800200Z b2d8104c3fa2: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:26.6865312Z a094d268b2a2: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:26.9218805Z 0e48af19f2f8: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:26.9219280Z 0e48af19f2f8: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:28.9188458Z a09219d53d41: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:28.9189131Z a09219d53d41: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:31.4243461Z ce2e2092ff93: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:31.4245134Z ce2e2092ff93: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:31.7210410Z f7a93ea6427c: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:31.9735581Z e6e31c11a945: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:31.9739479Z e6e31c11a945: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:34.0360587Z 5e32222e29a7: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:34.8706885Z 5e32222e29a7: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:34.8707730Z ce4d374719cb: Verifying Checksum
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:34.8708270Z ce4d374719cb: Download complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:34.9721576Z a094d268b2a2: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:35.1171012Z 439105f3f292: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:35.7593531Z 8230ea6b5617: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:36.1917901Z f2565199863c: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:36.2552716Z aebf6746c5b4: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:51.7196179Z a09219d53d41: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:52.8974168Z fced99825fe0: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:53.8392761Z 090edde53d4c: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:53.8831790Z 700edc275bc9: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:15:53.8994409Z 276cbf39bb76: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:02.2671603Z 81e952a70a02: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:02.6054268Z d8204cadd360: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:02.9256627Z 18f2e4b66b5a: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:14.3697925Z 769fd4b7e223: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:14.3830584Z 0334da32ef7a: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:14.4042987Z 94d062269ddf: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:15.1212440Z 10cab8f62f02: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:15.2775634Z b2d8104c3fa2: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:15.3076309Z 0e48af19f2f8: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:20.0143262Z 5e32222e29a7: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:36.4051729Z ce4d374719cb: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.3155109Z ce2e2092ff93: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.5563187Z f7a93ea6427c: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.5695116Z e6e31c11a945: Pull complete
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.5731088Z Digest: sha256:4e04df5a4f8fd76cd16dd17a07f015a33e5964ca07c48184fc1a163e10dd737b
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.5743533Z Status: Downloaded newer image for ghcr.io/github/super-linter:v4.10.0
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.5754186Z ghcr.io/github/super-linter:v4.10.0
+linter-execution	Pull ghcr.io/github/super-linter:v4.10.0	2026-11-01T15:16:39.5779439Z ##[endgroup]
+linter-execution	Checkout code	﻿2026-11-01T15:16:39.6076788Z ##[group]Run actions/checkout@v2
+linter-execution	Checkout code	2026-11-01T15:16:39.6077574Z with:
+linter-execution	Checkout code	2026-11-01T15:16:39.6077822Z   repository: LucaMZM/githubActions_examples
+linter-execution	Checkout code	2026-11-01T15:16:39.6080505Z   token: ***
+linter-execution	Checkout code	2026-11-01T15:16:39.6080716Z   ssh-strict: true
+linter-execution	Checkout code	2026-11-01T15:16:39.6080928Z   persist-credentials: true
+linter-execution	Checkout code	2026-11-01T15:16:39.6081157Z   clean: true
+linter-execution	Checkout code	2026-11-01T15:16:39.6081344Z   fetch-depth: 1
+linter-execution	Checkout code	2026-11-01T15:16:39.6081533Z   lfs: false
+linter-execution	Checkout code	2026-11-01T15:16:39.6081713Z   submodules: false
+linter-execution	Checkout code	2026-11-01T15:16:39.6081934Z   set-safe-directory: true
+linter-execution	Checkout code	2026-11-01T15:16:39.6082188Z   allow-unsafe-pr-checkout: false
+linter-execution	Checkout code	2026-11-01T15:16:39.6082662Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:39.9170504Z (node:2378) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+linter-execution	Checkout code	2026-11-01T15:16:39.9171832Z (Use `node --trace-deprecation ...` to show where the warning was created)
+linter-execution	Checkout code	2026-11-01T15:16:39.9273140Z Syncing repository: LucaMZM/githubActions_examples
+linter-execution	Checkout code	2026-11-01T15:16:39.9274549Z ##[group]Getting Git version info
+linter-execution	Checkout code	2026-11-01T15:16:39.9275114Z Working directory is '/home/runner/work/githubActions_examples/githubActions_examples'
+linter-execution	Checkout code	2026-11-01T15:16:39.9275948Z [command]/usr/bin/git version
+linter-execution	Checkout code	2026-11-01T15:16:39.9383004Z git version 2.56.0
+linter-execution	Checkout code	2026-11-01T15:16:39.9405659Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:39.9420251Z Temporarily overriding HOME='/home/runner/work/_temp/4bfb46e7-dd94-4fad-9d2d-a99fcc0932e8' before making global git config changes
+linter-execution	Checkout code	2026-11-01T15:16:39.9421832Z Adding repository directory to the temporary git global config as a safe directory
+linter-execution	Checkout code	2026-11-01T15:16:39.9424938Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/githubActions_examples/githubActions_examples
+linter-execution	Checkout code	2026-11-01T15:16:39.9481471Z Deleting the contents of '/home/runner/work/githubActions_examples/githubActions_examples'
+linter-execution	Checkout code	2026-11-01T15:16:39.9485436Z ##[group]Initializing the repository
+linter-execution	Checkout code	2026-11-01T15:16:39.9489938Z [command]/usr/bin/git init /home/runner/work/githubActions_examples/githubActions_examples
+linter-execution	Checkout code	2026-11-01T15:16:39.9662605Z hint: Using 'master' as the name for the initial branch. This default branch name
+linter-execution	Checkout code	2026-11-01T15:16:39.9663708Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+linter-execution	Checkout code	2026-11-01T15:16:39.9664560Z hint: to use in all of your new repositories, which will suppress this warning,
+linter-execution	Checkout code	2026-11-01T15:16:39.9665062Z hint: call:
+linter-execution	Checkout code	2026-11-01T15:16:39.9665295Z hint:
+linter-execution	Checkout code	2026-11-01T15:16:39.9665651Z hint: 	git config --global init.defaultBranch <name>
+linter-execution	Checkout code	2026-11-01T15:16:39.9666048Z hint:
+linter-execution	Checkout code	2026-11-01T15:16:39.9666430Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+linter-execution	Checkout code	2026-11-01T15:16:39.9667098Z hint: 'development'. The just-created branch can be renamed via this command:
+linter-execution	Checkout code	2026-11-01T15:16:39.9667916Z hint:
+linter-execution	Checkout code	2026-11-01T15:16:39.9668176Z hint: 	git branch -m <name>
+linter-execution	Checkout code	2026-11-01T15:16:39.9668467Z hint:
+linter-execution	Checkout code	2026-11-01T15:16:39.9668946Z hint: Disable this message with "git config set advice.defaultBranchName false"
+linter-execution	Checkout code	2026-11-01T15:16:39.9677886Z Initialized empty Git repository in /home/runner/work/githubActions_examples/githubActions_examples/.git/
+linter-execution	Checkout code	2026-11-01T15:16:39.9699688Z [command]/usr/bin/git remote add origin https://github.com/LucaMZM/githubActions_examples
+linter-execution	Checkout code	2026-11-01T15:16:39.9755623Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:39.9756227Z ##[group]Disabling automatic garbage collection
+linter-execution	Checkout code	2026-11-01T15:16:39.9759838Z [command]/usr/bin/git config --local gc.auto 0
+linter-execution	Checkout code	2026-11-01T15:16:39.9792479Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:39.9793119Z ##[group]Setting up auth
+linter-execution	Checkout code	2026-11-01T15:16:39.9798884Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+linter-execution	Checkout code	2026-11-01T15:16:39.9835228Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+linter-execution	Checkout code	2026-11-01T15:16:40.0245741Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+linter-execution	Checkout code	2026-11-01T15:16:40.0279627Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+linter-execution	Checkout code	2026-11-01T15:16:40.0522753Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+linter-execution	Checkout code	2026-11-01T15:16:40.0566335Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:40.0566919Z ##[group]Fetching the repository
+linter-execution	Checkout code	2026-11-01T15:16:40.0577910Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +f38e05d6dd0a7514f2faba1a68fc026ef7ba149f:refs/remotes/origin/nodejs_jest_job
+linter-execution	Checkout code	2026-11-01T15:16:40.4896099Z remote: Enumerating objects: 18, done.        
+linter-execution	Checkout code	2026-11-01T15:16:40.4981196Z remote: Counting objects:   5% (1/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4981976Z remote: Counting objects:  11% (2/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4982518Z remote: Counting objects:  16% (3/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4983078Z remote: Counting objects:  22% (4/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4983604Z remote: Counting objects:  27% (5/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4984135Z remote: Counting objects:  33% (6/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4984634Z remote: Counting objects:  38% (7/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4985144Z remote: Counting objects:  44% (8/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4985673Z remote: Counting objects:  50% (9/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4986191Z remote: Counting objects:  55% (10/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4986731Z remote: Counting objects:  61% (11/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4987514Z remote: Counting objects:  66% (12/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4988066Z remote: Counting objects:  72% (13/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4988588Z remote: Counting objects:  77% (14/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4989097Z remote: Counting objects:  83% (15/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4989615Z remote: Counting objects:  88% (16/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4990458Z remote: Counting objects:  94% (17/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4990975Z remote: Counting objects: 100% (18/18)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4991555Z remote: Counting objects: 100% (18/18), done.        
+linter-execution	Checkout code	2026-11-01T15:16:40.4992126Z remote: Compressing objects:   9% (1/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4992706Z remote: Compressing objects:  18% (2/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4993249Z remote: Compressing objects:  27% (3/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4993766Z remote: Compressing objects:  36% (4/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4994321Z remote: Compressing objects:  45% (5/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4994845Z remote: Compressing objects:  54% (6/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4995437Z remote: Compressing objects:  63% (7/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4995945Z remote: Compressing objects:  72% (8/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4996543Z remote: Compressing objects:  81% (9/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4997491Z remote: Compressing objects:  90% (10/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4998202Z remote: Compressing objects: 100% (11/11)        
+linter-execution	Checkout code	2026-11-01T15:16:40.4998772Z remote: Compressing objects: 100% (11/11), done.        
+linter-execution	Checkout code	2026-11-01T15:16:40.4999452Z remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0 (from 0)        
+linter-execution	Checkout code	2026-11-01T15:16:40.5089541Z From https://github.com/LucaMZM/githubActions_examples
+linter-execution	Checkout code	2026-11-01T15:16:40.5090360Z  * [new ref]         f38e05d6dd0a7514f2faba1a68fc026ef7ba149f -> origin/nodejs_jest_job
+linter-execution	Checkout code	2026-11-01T15:16:40.5095987Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:40.5096418Z ##[group]Determining the checkout info
+linter-execution	Checkout code	2026-11-01T15:16:40.5098981Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:40.5099639Z ##[group]Checking out the ref
+linter-execution	Checkout code	2026-11-01T15:16:40.5104883Z [command]/usr/bin/git checkout --progress --force -B nodejs_jest_job refs/remotes/origin/nodejs_jest_job
+linter-execution	Checkout code	2026-11-01T15:16:40.5181425Z Switched to a new branch 'nodejs_jest_job'
+linter-execution	Checkout code	2026-11-01T15:16:40.5188118Z branch 'nodejs_jest_job' set up to track 'origin/nodejs_jest_job'.
+linter-execution	Checkout code	2026-11-01T15:16:40.5192912Z ##[endgroup]
+linter-execution	Checkout code	2026-11-01T15:16:40.5260749Z [command]/usr/bin/git log -1 --format='%H'
+linter-execution	Checkout code	2026-11-01T15:16:40.5286737Z 'f38e05d6dd0a7514f2faba1a68fc026ef7ba149f'
+linter-execution	Linter execution	﻿2026-11-01T15:16:40.5552187Z ##[group]Run github/super-linter@v4
+linter-execution	Linter execution	2026-11-01T15:16:40.5552494Z env:
+linter-execution	Linter execution	2026-11-01T15:16:40.5552696Z   DEFAULT_BRANCH: nodejs_example
+linter-execution	Linter execution	2026-11-01T15:16:40.5555354Z   GITHUB_TOKEN: ***
+linter-execution	Linter execution	2026-11-01T15:16:40.5555573Z   LINTER_RULES_PATH: /
+linter-execution	Linter execution	2026-11-01T15:16:40.5555815Z   JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
+linter-execution	Linter execution	2026-11-01T15:16:40.5556109Z   VALIDATE_JAVASCRIPT_ES: true
+linter-execution	Linter execution	2026-11-01T15:16:40.5556350Z ##[endgroup]
+linter-execution	Linter execution	2026-11-01T15:16:40.5651285Z ##[command]/usr/bin/docker run --name ghcriogithubsuperlinterv4100_00324c --label 950e80 --workdir /github/workspace --rm -e "DEFAULT_BRANCH" -e "GITHUB_TOKEN" -e "LINTER_RULES_PATH" -e "JAVASCRIPT_ES_CONFIG_FILE" -e "VALIDATE_JAVASCRIPT_ES" -e "HOME" -e "GITHUB_JOB" -e "GITHUB_REF" -e "GITHUB_SHA" -e "GITHUB_REPOSITORY" -e "GITHUB_REPOSITORY_OWNER" -e "GITHUB_REPOSITORY_OWNER_ID" -e "GITHUB_RUN_ID" -e "GITHUB_RUN_NUMBER" -e "GITHUB_RETENTION_DAYS" -e "GITHUB_RUN_ATTEMPT" -e "GITHUB_ACTOR_ID" -e "GITHUB_ACTOR" -e "GITHUB_WORKFLOW" -e "GITHUB_HEAD_REF" -e "GITHUB_BASE_REF" -e "GITHUB_EVENT_NAME" -e "GITHUB_SERVER_URL" -e "GITHUB_API_URL" -e "GITHUB_GRAPHQL_URL" -e "GITHUB_REF_NAME" -e "GITHUB_REF_PROTECTED" -e "GITHUB_REF_TYPE" -e "GITHUB_WORKFLOW_REF" -e "GITHUB_WORKFLOW_SHA" -e "GITHUB_REPOSITORY_ID" -e "GITHUB_TRIGGERING_ACTOR" -e "GITHUB_WORKSPACE" -e "GITHUB_ACTION" -e "GITHUB_EVENT_PATH" -e "GITHUB_ACTION_REPOSITORY" -e "GITHUB_ACTION_REF" -e "GITHUB_PATH" -e "GITHUB_ENV" -e "GITHUB_STEP_SUMMARY" -e "GITHUB_STATE" -e "GITHUB_OUTPUT" -e "GITHUB_ARTIFACTS" -e "GITHUB_ARTIFACTS_LIST" -e "RUNNER_OS" -e "RUNNER_ARCH" -e "RUNNER_NAME" -e "RUNNER_ENVIRONMENT" -e "RUNNER_TOOL_CACHE" -e "RUNNER_TEMP" -e "RUNNER_WORKSPACE" -e "ACTIONS_RUNTIME_URL" -e "ACTIONS_RUNTIME_TOKEN" -e "ACTIONS_CACHE_URL" -e "ACTIONS_RESULTS_URL" -e "ACTIONS_CACHE_MODE" -e "ACTIONS_ORCHESTRATION_ID" -e GITHUB_ACTIONS=true -e CI=true -v "/var/run/docker.sock":"/var/run/docker.sock" -v "/home/runner/work/_temp":"/github/runner_temp" -v "/home/runner/work/_temp/_github_home":"/github/home" -v "/home/runner/work/_temp/_github_workflow":"/github/workflow" -v "/home/runner/work/_temp/_runner_file_commands":"/github/file_commands" -v "/home/runner/work/githubActions_examples/githubActions_examples":"/github/workspace" ghcr.io/github/super-linter:v4.10.0
+linter-execution	Linter execution	2026-11-01T15:16:41.0560107Z --------------------------------------------------------------------------------
+linter-execution	Linter execution	2026-11-01T15:16:41.0560518Z 
+linter-execution	Linter execution	2026-11-01T15:16:41.0560647Z                               /@@#///////@@/(@//@%/(@.@(       @@
+linter-execution	Linter execution	2026-11-01T15:16:41.0561023Z                           @@//////////////////////////////#*  @@@
+linter-execution	Linter execution	2026-11-01T15:16:41.0561423Z                         @////@//(///////////@@@@@///@//@/@**//@@(
+linter-execution	Linter execution	2026-11-01T15:16:41.0561851Z                       @///////@///////////////@@@@    (           @,
+linter-execution	Linter execution	2026-11-01T15:16:41.0562210Z                      @/(&/@////////////////////                     @
+linter-execution	Linter execution	2026-11-01T15:16:41.0562593Z                     @////////////////////////@@                      @
+linter-execution	Linter execution	2026-11-01T15:16:41.0563001Z                   @%////////(//////////%/////&@            @@       *,@           ______________
+linter-execution	Linter execution	2026-11-01T15:16:41.0563494Z              @@@@@/@/#/////(&//////////////////                       .@         /              \
+linter-execution	Linter execution	2026-11-01T15:16:41.0563994Z         *@@@@@.    .%///(//@//////////////////&.   .@@,                 @%      / Don't mind me  \
+linter-execution	Linter execution	2026-11-01T15:16:41.0564502Z       @@%           .&@&&/@.@//&/////(//////////    @@@@@@@@@         .. &@    / I'm just looking \
+linter-execution	Linter execution	2026-11-01T15:16:41.0565012Z     @@%               @@@@@   @&/////////////////#   @/       V  @@/ ,@@@ @   <  for some trash... |
+linter-execution	Linter execution	2026-11-01T15:16:41.0565514Z @@@%                   @@@@        .%@@@@//////#@ @   @@         @     .,.     \__________________/
+linter-execution	Linter execution	2026-11-01T15:16:41.0565940Z                                           @@@/@(  (@@@@% @/\      %
+linter-execution	Linter execution	2026-11-01T15:16:41.0566320Z                                            @@@@(    .     .@@/\   #
+linter-execution	Linter execution	2026-11-01T15:16:41.0566705Z                                              @                  %@%
+linter-execution	Linter execution	2026-11-01T15:16:41.0566944Z 
+linter-execution	Linter execution	2026-11-01T15:16:41.0568069Z --------------------------------------------------------------------------------
+linter-execution	Linter execution	2026-11-01T15:16:41.0591731Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   ---------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0624599Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   --- GitHub Actions Multi Language Linter ----^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0658071Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m    - Image Creation Date:[2023-01-04T06:45:30Z]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0690318Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m    - Image Revision:[d2600eb1bd51e68b2c065501b241c450be01a216]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0722947Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m    - Image Version:[d2600eb1bd51e68b2c065501b241c450be01a216]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0755278Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   ---------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0786925Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   ---------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0818641Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   The Super-Linter source code can be found at:^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0851080Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m    - https://github.com/github/super-linter^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.0883335Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   ---------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1163469Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   --------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1197517Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Gathering GitHub information...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1232640Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_SHA]^[[0;34m, value:^[[0;37m[f38e05d6dd0a7514f2faba1a68fc026ef7ba149f]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1266235Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_WORKSPACE]^[[0;34m, value:^[[0;37m[/github/workspace]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1297921Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_EVENT_PATH]^[[0;34m, value:^[[0;37m[/github/workflow/event.json]^[[0;34m^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1610477Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_ORG]^[[0;34m, value:^[[0;37m[LucaMZM]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1920126Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_REPO]^[[0;34m, value:^[[0;37m[githubActions_examples]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1952815Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_TOKEN]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.1987624Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_REPOSITORY]^[[0;34m, value:^[[0;37m[LucaMZM/githubActions_examples]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.2020793Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Successfully found:^[[0;37m[GITHUB_RUN_ID]^[[0;34m, value:^[[0;37m[41320251093]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.2054882Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   --------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.2086557Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   Gathering user validation information...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:41.2119186Z ^[[0m2026-11-01 15:16:41 ^[[0;34m[INFO]^[[0m   - Validating ALL files in code base...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:42.3687635Z ^[[0m2026-11-01 15:16:42 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:42.3721190Z ^[[0m2026-11-01 15:16:42 ^[[0;34m[INFO]^[[0m   User provided file:[/github/workspace/.eslintrc.json] exists, setting rules file...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:42.4128352Z ^[[0m2026-11-01 15:16:42 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:42.4161282Z ^[[0m2026-11-01 15:16:42 ^[[0;34m[INFO]^[[0m   User provided file:[/github/workspace/.eslintrc.json] exists, setting rules file...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:42.5347179Z ^[[0m2026-11-01 15:16:42 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:42.5380225Z ^[[0m2026-11-01 15:16:42 ^[[0;34m[INFO]^[[0m   User provided file:[/github/workspace/.eslintrc.json] exists, setting rules file...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:44.7043714Z ^[[0m2026-11-01 15:16:44 ^[[0;34m[INFO]^[[0m   ---------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:44.7079549Z ^[[0m2026-11-01 15:16:44 ^[[0;34m[INFO]^[[0m   ------ File list to check: ------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:44.7114923Z ^[[0m2026-11-01 15:16:44 ^[[0;34m[INFO]^[[0m   ---------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.3632099Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.3666578Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   Successfully gathered list of files...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.6691917Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.6726696Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.6762457Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.6836425Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   Linting [JAVASCRIPT_ES] files...^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.6871626Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.6908622Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.7163121Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   ---------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:45.7200317Z ^[[0m2026-11-01 15:16:45 ^[[0;34m[INFO]^[[0m   File:[/github/workspace/server.js]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:46.1581539Z ^[[0m2026-11-01 15:16:46 ^[[0;34m[INFO]^[[0m    - File:^[[0;37m[server.js]^[[0;34m was linted with ^[[0;37m[eslint]^[[0;34m successfully^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:46.1863007Z ^[[0m2026-11-01 15:16:46 ^[[0;34m[INFO]^[[0m   ---------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:46.1898121Z ^[[0m2026-11-01 15:16:46 ^[[0;34m[INFO]^[[0m   File:[/github/workspace/sum.js]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:46.6143241Z ^[[0m2026-11-01 15:16:46 ^[[0;34m[INFO]^[[0m    - File:^[[0;37m[sum.js]^[[0;34m was linted with ^[[0;37m[eslint]^[[0;34m successfully^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:46.6457593Z ^[[0m2026-11-01 15:16:46 ^[[0;34m[INFO]^[[0m   ---------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:46.6493845Z ^[[0m2026-11-01 15:16:46 ^[[0;34m[INFO]^[[0m   File:[/github/workspace/sum.test.js]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:47.0864758Z ^[[0m2026-11-01 15:16:47 ^[[0;34m[INFO]^[[0m    - File:^[[0;37m[sum.test.js]^[[0;34m was linted with ^[[0;37m[eslint]^[[0;34m successfully^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:47.6170672Z ^[[0m2026-11-01 15:16:47 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:47.6207407Z ^[[0m2026-11-01 15:16:47 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:47.6245354Z ^[[0m2026-11-01 15:16:47 ^[[0;34m[INFO]^[[0m   The script has completed^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:47.6281878Z ^[[0m2026-11-01 15:16:47 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:47.6318184Z ^[[0m2026-11-01 15:16:47 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:48.1746306Z ^[[0m2026-11-01 15:16:48 ^[[0;34m[INFO]^[[0m   ERROR! Failed to call GitHub Status API!^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:48.1783621Z ^[[0m2026-11-01 15:16:48 ^[[0;34m[INFO]^[[0m   ERROR:[curl: (22) The requested URL returned error: 403]^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:48.1849356Z ^[[0m2026-11-01 15:16:48 ^[[0;32m[NOTICE]^[[0m   All file(s) linted successfully with no errors detected^[[0m
+linter-execution	Linter execution	2026-11-01T15:16:48.1885374Z ^[[0m2026-11-01 15:16:48 ^[[0;34m[INFO]^[[0m   ----------------------------------------------^[[0m
+linter-execution	Post Checkout code	﻿2026-11-01T15:16:48.2814559Z Post job cleanup.
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3767772Z (node:8594) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3769061Z (Use `node --trace-deprecation ...` to show where the warning was created)
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3803139Z [command]/usr/bin/git version
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3850725Z git version 2.56.0
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3891877Z Temporarily overriding HOME='/home/runner/work/_temp/12dcb59b-225a-4072-8c36-39bbca692009' before making global git config changes
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3893262Z Adding repository directory to the temporary git global config as a safe directory
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3897676Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/githubActions_examples/githubActions_examples
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3962009Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+linter-execution	Post Checkout code	2026-11-01T15:16:48.3999207Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+linter-execution	Post Checkout code	2026-11-01T15:16:48.4243592Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+linter-execution	Post Checkout code	2026-11-01T15:16:48.4273442Z http.https://github.com/.extraheader
+linter-execution	Post Checkout code	2026-11-01T15:16:48.4281893Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+linter-execution	Post Checkout code	2026-11-01T15:16:48.4315334Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+linter-execution	Complete job	﻿2026-11-01T15:16:48.4725056Z Cleaning up orphan processes
+linter-execution	Complete job	2026-11-01T15:16:48.5123271Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test-execution	Set up job	﻿2026-11-01T15:16:53.7245253Z Current runner version: '2.338.2'
+test-execution	Set up job	2026-11-01T15:16:53.7271630Z ##[group]Runner Image Provisioner
+test-execution	Set up job	2026-11-01T15:16:53.7272507Z Hosted Compute Agent
+test-execution	Set up job	2026-11-01T15:16:53.7273314Z Version: 20261021.618
+test-execution	Set up job	2026-11-01T15:16:53.7273956Z Commit: 21505ad2541d5be6135ed84fc33697146cf75b8e
+test-execution	Set up job	2026-11-01T15:16:53.7274652Z Build Date: 2026-10-21T00:45:21Z
+test-execution	Set up job	2026-11-01T15:16:53.7275323Z Worker ID: {820adff0-fad3-4130-89b7-f0ce879ee2c0}
+test-execution	Set up job	2026-11-01T15:16:53.7275970Z Region: westus3
+test-execution	Set up job	2026-11-01T15:16:53.7276467Z Cloud: Azure
+test-execution	Set up job	2026-11-01T15:16:53.7276982Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7278403Z ##[group]Operating System
+test-execution	Set up job	2026-11-01T15:16:53.7278993Z Ubuntu
+test-execution	Set up job	2026-11-01T15:16:53.7279528Z 24.04.5
+test-execution	Set up job	2026-11-01T15:16:53.7280034Z LTS
+test-execution	Set up job	2026-11-01T15:16:53.7280522Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7281020Z ##[group]Runner Image
+test-execution	Set up job	2026-11-01T15:16:53.7281567Z Image: ubuntu-24.04
+test-execution	Set up job	2026-11-01T15:16:53.7282119Z Version: 20261025.353.1
+test-execution	Set up job	2026-11-01T15:16:53.7283263Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261025.353/images/ubuntu/Ubuntu2404-Readme.md
+test-execution	Set up job	2026-11-01T15:16:53.7284876Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261025.353
+test-execution	Set up job	2026-11-01T15:16:53.7285762Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7286904Z ##[group]GITHUB_TOKEN Permissions
+test-execution	Set up job	2026-11-01T15:16:53.7288918Z Contents: read
+test-execution	Set up job	2026-11-01T15:16:53.7289547Z Metadata: read
+test-execution	Set up job	2026-11-01T15:16:53.7290162Z Packages: read
+test-execution	Set up job	2026-11-01T15:16:53.7290667Z ##[endgroup]
+test-execution	Set up job	2026-11-01T15:16:53.7293005Z Secret source: Actions
+test-execution	Set up job	2026-11-01T15:16:53.7294384Z Cache mode: write
+test-execution	Set up job	2026-11-01T15:16:53.7295132Z Prepare workflow directory
+test-execution	Set up job	2026-11-01T15:16:53.7689512Z Prepare all required actions
+test-execution	Set up job	2026-11-01T15:16:53.7741549Z Getting action download info
+test-execution	Set up job	2026-11-01T15:16:54.0664727Z Download action repository 'actions/checkout@v2' (SHA:0717577d45739eb3c851188b29f50ed6c0b2194e)
+test-execution	Set up job	2026-11-01T15:16:54.7362272Z Complete job name: test-execution
+test-execution	Checkout code	﻿2026-11-01T15:16:54.8140613Z ##[group]Run actions/checkout@v2
+test-execution	Checkout code	2026-11-01T15:16:54.8141596Z with:
+test-execution	Checkout code	2026-11-01T15:16:54.8142626Z   repository: LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:54.8147009Z   token: ***
+test-execution	Checkout code	2026-11-01T15:16:54.8147514Z   ssh-strict: true
+test-execution	Checkout code	2026-11-01T15:16:54.8148020Z   persist-credentials: true
+test-execution	Checkout code	2026-11-01T15:16:54.8148549Z   clean: true
+test-execution	Checkout code	2026-11-01T15:16:54.8149061Z   fetch-depth: 1
+test-execution	Checkout code	2026-11-01T15:16:54.8149533Z   lfs: false
+test-execution	Checkout code	2026-11-01T15:16:54.8149978Z   submodules: false
+test-execution	Checkout code	2026-11-01T15:16:54.8150535Z   set-safe-directory: true
+test-execution	Checkout code	2026-11-01T15:16:54.8151077Z   allow-unsafe-pr-checkout: false
+test-execution	Checkout code	2026-11-01T15:16:54.8152082Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.0778968Z (node:2133) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test-execution	Checkout code	2026-11-01T15:16:55.0781415Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test-execution	Checkout code	2026-11-01T15:16:55.0886972Z Syncing repository: LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.0889153Z ##[group]Getting Git version info
+test-execution	Checkout code	2026-11-01T15:16:55.0890372Z Working directory is '/home/runner/work/githubActions_examples/githubActions_examples'
+test-execution	Checkout code	2026-11-01T15:16:55.0891618Z [command]/usr/bin/git version
+test-execution	Checkout code	2026-11-01T15:16:55.0940141Z git version 2.56.0
+test-execution	Checkout code	2026-11-01T15:16:55.0960573Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.0974917Z Temporarily overriding HOME='/home/runner/work/_temp/cd1e7aeb-02a8-4191-bc66-0b2ed5b85f5c' before making global git config changes
+test-execution	Checkout code	2026-11-01T15:16:55.0977558Z Adding repository directory to the temporary git global config as a safe directory
+test-execution	Checkout code	2026-11-01T15:16:55.0980317Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/githubActions_examples/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.1027484Z Deleting the contents of '/home/runner/work/githubActions_examples/githubActions_examples'
+test-execution	Checkout code	2026-11-01T15:16:55.1031084Z ##[group]Initializing the repository
+test-execution	Checkout code	2026-11-01T15:16:55.1035925Z [command]/usr/bin/git init /home/runner/work/githubActions_examples/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.1132896Z hint: Using 'master' as the name for the initial branch. This default branch name
+test-execution	Checkout code	2026-11-01T15:16:55.1134373Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test-execution	Checkout code	2026-11-01T15:16:55.1135454Z hint: to use in all of your new repositories, which will suppress this warning,
+test-execution	Checkout code	2026-11-01T15:16:55.1136216Z hint: call:
+test-execution	Checkout code	2026-11-01T15:16:55.1136667Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1137313Z hint: 	git config --global init.defaultBranch <name>
+test-execution	Checkout code	2026-11-01T15:16:55.1137940Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1138741Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test-execution	Checkout code	2026-11-01T15:16:55.1139806Z hint: 'development'. The just-created branch can be renamed via this command:
+test-execution	Checkout code	2026-11-01T15:16:55.1140568Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1141086Z hint: 	git branch -m <name>
+test-execution	Checkout code	2026-11-01T15:16:55.1141601Z hint:
+test-execution	Checkout code	2026-11-01T15:16:55.1142770Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test-execution	Checkout code	2026-11-01T15:16:55.1144933Z Initialized empty Git repository in /home/runner/work/githubActions_examples/githubActions_examples/.git/
+test-execution	Checkout code	2026-11-01T15:16:55.1151947Z [command]/usr/bin/git remote add origin https://github.com/LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.1194915Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.1199120Z ##[group]Disabling automatic garbage collection
+test-execution	Checkout code	2026-11-01T15:16:55.1199869Z [command]/usr/bin/git config --local gc.auto 0
+test-execution	Checkout code	2026-11-01T15:16:55.1225884Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.1227027Z ##[group]Setting up auth
+test-execution	Checkout code	2026-11-01T15:16:55.1231928Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-execution	Checkout code	2026-11-01T15:16:55.1265622Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-execution	Checkout code	2026-11-01T15:16:55.1574209Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test-execution	Checkout code	2026-11-01T15:16:55.1599274Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test-execution	Checkout code	2026-11-01T15:16:55.1780882Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test-execution	Checkout code	2026-11-01T15:16:55.1819945Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.1820910Z ##[group]Fetching the repository
+test-execution	Checkout code	2026-11-01T15:16:55.1830073Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +f38e05d6dd0a7514f2faba1a68fc026ef7ba149f:refs/remotes/origin/nodejs_jest_job
+test-execution	Checkout code	2026-11-01T15:16:55.5972885Z remote: Enumerating objects: 18, done.        
+test-execution	Checkout code	2026-11-01T15:16:55.5975072Z remote: Counting objects:   5% (1/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5976893Z remote: Counting objects:  11% (2/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5978575Z remote: Counting objects:  16% (3/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5980310Z remote: Counting objects:  22% (4/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5982045Z remote: Counting objects:  27% (5/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5983784Z remote: Counting objects:  33% (6/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5985238Z remote: Counting objects:  38% (7/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5986630Z remote: Counting objects:  44% (8/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5988023Z remote: Counting objects:  50% (9/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5989551Z remote: Counting objects:  55% (10/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5990558Z remote: Counting objects:  61% (11/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5991407Z remote: Counting objects:  66% (12/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5993537Z remote: Counting objects:  72% (13/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5995199Z remote: Counting objects:  77% (14/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5996284Z remote: Counting objects:  83% (15/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5997232Z remote: Counting objects:  88% (16/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5998230Z remote: Counting objects:  94% (17/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.5999097Z remote: Counting objects: 100% (18/18)        
+test-execution	Checkout code	2026-11-01T15:16:55.6000387Z remote: Counting objects: 100% (18/18), done.        
+test-execution	Checkout code	2026-11-01T15:16:55.6001629Z remote: Compressing objects:   9% (1/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6003263Z remote: Compressing objects:  18% (2/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6004828Z remote: Compressing objects:  27% (3/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6006197Z remote: Compressing objects:  36% (4/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6007480Z remote: Compressing objects:  45% (5/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6009008Z remote: Compressing objects:  54% (6/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6010422Z remote: Compressing objects:  63% (7/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6011869Z remote: Compressing objects:  72% (8/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6013702Z remote: Compressing objects:  81% (9/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6015016Z remote: Compressing objects:  90% (10/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6016264Z remote: Compressing objects: 100% (11/11)        
+test-execution	Checkout code	2026-11-01T15:16:55.6018101Z remote: Compressing objects: 100% (11/11), done.        
+test-execution	Checkout code	2026-11-01T15:16:55.6020542Z remote: Total 18 (delta 1), reused 15 (delta 1), pack-reused 0 (from 0)        
+test-execution	Checkout code	2026-11-01T15:16:55.6155412Z From https://github.com/LucaMZM/githubActions_examples
+test-execution	Checkout code	2026-11-01T15:16:55.6157562Z  * [new ref]         f38e05d6dd0a7514f2faba1a68fc026ef7ba149f -> origin/nodejs_jest_job
+test-execution	Checkout code	2026-11-01T15:16:55.6162315Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.6164154Z ##[group]Determining the checkout info
+test-execution	Checkout code	2026-11-01T15:16:55.6165516Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.6166944Z ##[group]Checking out the ref
+test-execution	Checkout code	2026-11-01T15:16:55.6170776Z [command]/usr/bin/git checkout --progress --force -B nodejs_jest_job refs/remotes/origin/nodejs_jest_job
+test-execution	Checkout code	2026-11-01T15:16:55.6236232Z Switched to a new branch 'nodejs_jest_job'
+test-execution	Checkout code	2026-11-01T15:16:55.6240059Z branch 'nodejs_jest_job' set up to track 'origin/nodejs_jest_job'.
+test-execution	Checkout code	2026-11-01T15:16:55.6249565Z ##[endgroup]
+test-execution	Checkout code	2026-11-01T15:16:55.6284402Z [command]/usr/bin/git log -1 --format='%H'
+test-execution	Checkout code	2026-11-01T15:16:55.6307987Z 'f38e05d6dd0a7514f2faba1a68fc026ef7ba149f'
+test-execution	Run jest tests	﻿2026-11-01T15:16:55.6698158Z ##[group]Run npm install jest
+test-execution	Run jest tests	2026-11-01T15:16:55.6699561Z ^[[36;1mnpm install jest^[[0m
+test-execution	Run jest tests	2026-11-01T15:16:55.6700710Z ^[[36;1mnpm test^[[0m
+test-execution	Run jest tests	2026-11-01T15:16:55.6718305Z shell: /usr/bin/bash -e {0}
+test-execution	Run jest tests	2026-11-01T15:16:55.6719413Z ##[endgroup]
+test-execution	Run jest tests	2026-11-01T15:16:58.6058567Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+test-execution	Run jest tests	2026-11-01T15:17:00.2145241Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2146061Z added 278 packages, and audited 279 packages in 4s
+test-execution	Run jest tests	2026-11-01T15:17:00.2146667Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2146921Z 48 packages are looking for funding
+test-execution	Run jest tests	2026-11-01T15:17:00.2147459Z   run `npm fund` for details
+test-execution	Run jest tests	2026-11-01T15:17:00.2451434Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2456661Z 19 vulnerabilities (3 low, 16 moderate)
+test-execution	Run jest tests	2026-11-01T15:17:00.2457182Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2457453Z To address issues that do not require attention, run:
+test-execution	Run jest tests	2026-11-01T15:17:00.2458086Z   npm audit fix
+test-execution	Run jest tests	2026-11-01T15:17:00.2458352Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2458670Z To address all issues (including breaking changes), run:
+test-execution	Run jest tests	2026-11-01T15:17:00.2459317Z   npm audit fix --force
+test-execution	Run jest tests	2026-11-01T15:17:00.2459681Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.2459937Z Run `npm audit` for details.
+test-execution	Run jest tests	2026-11-01T15:17:00.3768819Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.3769532Z > github-actions-examples@1.0.0 test
+test-execution	Run jest tests	2026-11-01T15:17:00.3770243Z > jest
+test-execution	Run jest tests	2026-11-01T15:17:00.3770495Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.9540788Z PASS ./sum.test.js
+test-execution	Run jest tests	2026-11-01T15:17:00.9546066Z   ✓ adds 1 + 2 to equal 3 (2 ms)
+test-execution	Run jest tests	2026-11-01T15:17:00.9546916Z 
+test-execution	Run jest tests	2026-11-01T15:17:00.9569536Z Test Suites: 1 passed, 1 total
+test-execution	Run jest tests	2026-11-01T15:17:00.9570416Z Tests:       1 passed, 1 total
+test-execution	Run jest tests	2026-11-01T15:17:00.9571249Z Snapshots:   0 total
+test-execution	Run jest tests	2026-11-01T15:17:00.9571947Z Time:        0.323 s
+test-execution	Run jest tests	2026-11-01T15:17:00.9573421Z Ran all test suites.
+test-execution	Post Checkout code	﻿2026-11-01T15:17:01.0000804Z Post job cleanup.
+test-execution	Post Checkout code	2026-11-01T15:17:01.1112457Z (node:2289) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test-execution	Post Checkout code	2026-11-01T15:17:01.1114114Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test-execution	Post Checkout code	2026-11-01T15:17:01.1151815Z [command]/usr/bin/git version
+test-execution	Post Checkout code	2026-11-01T15:17:01.1193997Z git version 2.56.0
+test-execution	Post Checkout code	2026-11-01T15:17:01.1230449Z Temporarily overriding HOME='/home/runner/work/_temp/238cf043-7e18-4e04-a61d-8f3385b4b114' before making global git config changes
+test-execution	Post Checkout code	2026-11-01T15:17:01.1231992Z Adding repository directory to the temporary git global config as a safe directory
+test-execution	Post Checkout code	2026-11-01T15:17:01.1234617Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/githubActions_examples/githubActions_examples
+test-execution	Post Checkout code	2026-11-01T15:17:01.1278167Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test-execution	Post Checkout code	2026-11-01T15:17:01.1313071Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test-execution	Post Checkout code	2026-11-01T15:17:01.1536553Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test-execution	Post Checkout code	2026-11-01T15:17:01.1566917Z http.https://github.com/.extraheader
+test-execution	Post Checkout code	2026-11-01T15:17:01.1577152Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test-execution	Post Checkout code	2026-11-01T15:17:01.1615384Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test-execution	Complete job	﻿2026-11-01T15:17:01.2000777Z Cleaning up orphan processes
+test-execution	Complete job	2026-11-01T15:17:01.2399851Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v2. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

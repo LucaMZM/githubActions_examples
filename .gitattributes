@@ -1,0 +1,4 @@
+*.pdf binary
+*.png binary
+# Preserve original command logs, including their trailing whitespace.
+documentacion/evidencias/*.log -whitespace

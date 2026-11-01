@@ -1,0 +1,34 @@
+$ git show --stat --oneline HEAD
+f38e05d feat: run original Jest test after lint on nodejs_jest_job
+ .eslintrc.json                                     |    6 +
+ .github/workflows/main_workflow.yml                |   15 +-
+ .gitignore                                         |    3 +
+ documentacion/evidencias/05-eslint-local.log       |    0
+ documentacion/evidencias/06-jest-local-verbose.log |    9 +
+ documentacion/evidencias/06-jest-local.log         |    9 +
+ package-lock.json                                  | 4474 ++++++++++++++++++++
+ package.json                                       |   12 +
+ sum.js                                             |    4 +
+ sum.test.js                                        |    5 +
+ 10 files changed, 4536 insertions(+), 1 deletion(-)
+
+Exit code: 0
+
+$ git status -sb
+## nodejs_jest_job...origin/nodejs_jest_job
+?? documentacion/evidencias/01-branca-github.png
+?? documentacion/evidencias/01-branca-real.txt
+?? documentacion/evidencias/02-sum-original.png
+?? documentacion/evidencias/02-test-original.png
+?? documentacion/evidencias/03-package-jest.png
+?? documentacion/evidencias/04-workflow-needs.png
+?? documentacion/evidencias/05-validacio-local.txt
+?? documentacion/evidencias/06-jest-local.txt
+?? documentacion/evidencias/07-commit-publicat.png
+?? documentacion/evidencias/08-actions-success.png
+?? documentacion/evidencias/08-execucio-verificada.json
+?? documentacion/evidencias/08-github-actions.log
+?? documentacion/evidencias/09-job-github.png
+?? documentacion/evidencias/09-test-execution.log
+
+Exit code: 0

@@ -1,0 +1,37 @@
+EXTRACTE REAL DE GITHUB ACTIONS - NO ES UNA EXECUCIO LOCAL
+Run: 41320251093 | Job: 124889172651 | Commit: f38e05d
+Pas: Run jest tests. Columna de missatges; log complet: 09-test-execution.log
+
+##[group]Run npm install jest
+npm install jest
+npm test
+shell: /usr/bin/bash -e {0}
+##[endgroup]
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 278 packages, and audited 279 packages in 4s
+
+48 packages are looking for funding
+  run `npm fund` for details
+
+19 vulnerabilities (3 low, 16 moderate)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+> github-actions-examples@1.0.0 test
+> jest
+
+PASS ./sum.test.js
+  ✓ adds 1 + 2 to equal 3 (2 ms)
+
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        0.323 s
+Ran all test suites.
