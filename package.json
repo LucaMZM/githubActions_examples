@@ -1,0 +1,12 @@
+{
+  "name": "github-actions-examples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Pràctica de GitHub Actions amb ESLint i Jest",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^30.5.2"
+  }
+}
