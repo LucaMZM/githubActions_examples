@@ -1,0 +1,19 @@
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials*.json
+secrets*.json
+*.sqlite
+*.db
+*.backup
+*.sql.gz
+# Development artifacts
+node_modules/
+.DS_Store
+*.log
